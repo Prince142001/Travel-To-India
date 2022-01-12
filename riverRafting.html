@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="signInPage.css">
+
+    <!-- ---------------------Image Slider Css----------------------- -->
+    <link rel="stylesheet" href="imageSlider.css">
+
+    <!-- ---------------------Section File Css----------------------- -->
+    <link rel="stylesheet" href="sectionPage.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="darkAndLightMode.css">
+
+    <!-- ---------------------Scroll Btn Css----------------------- -->
+    <link rel="stylesheet" href="scrollToTop.css">
+
+    <style>
+        main>section>span>p {
+            margin: 0 0 0.9rem;
+            font-weight: bold;
+        }
+
+        main>section>span>p>a {
+            color: blue;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        main>section>span>p>a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>River Rafting In India</title>
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <!-- ---------------------Scroll back to top----------------------- -->
+    <button onclick="scrollToTop()" id="backToTopBtn">&mapstoup;</button>
+
+    <!-- ---------------------Main----------------------- -->
+    <main>
+        
+        <!-- ------------------------------Section One-------------------------------------- -->
+        <section>
+            <!-- ---------------------------------Image Slider or Slideshow HTML----------------------------------------------------------- -->
+            <div class="slideShowContainer">
+                <img src="Main Page Images/river raftin image1.jpg" class="imageSlides fadeSlides"
+                    alt="slide image 1">
+                <img src="Main Page Images/river raftin image2.jpg" class="imageSlides fadeSlides" alt="slide image 2">
+                <img src="Main Page Images/river raftin image3.jpg" class="imageSlides fadeSlides"
+                    alt="slide image 3">
+            </div>
+
+            <div style="text-align:center">
+                <span class="slideShowDot"></span>
+                <span class="slideShowDot"></span>
+                <span class="slideShowDot"></span>
+            </div>
+        </section>
+        
+        <!-- ---------------------Section Two----------------------- -->
+        <section>
+            <span>
+                <p>
+                    <a href="travelToIndia.html">Home </a> &Gt; River Rafting In India
+                </p>
+            </span>
+            <span>
+                <h2>River Rafting In India</h2>
+            </span>
+            <hr>
+            <div class="historicalPlaces">
+                <div class="placesImages riverRaftingImages">
+                    <!-- ---------------------Indus River----------------------- -->
+                    <img src="River Rafting Images/Rafting-In-Indus-River.jpg" alt="Indus River" height="197cm">
+                    <h2 class="placeName">Indus River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b> early November to March end</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutIndusRiver.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Kullu-Manali----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-on-river-Beas.jpg" alt="Kullu-Manali" height="198cm" class="kulluManaliImage">
+                    <h2 class="placeName">Kullu-Manali</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>Starting June to end July</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutKulluManaliRiver.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Yamuna River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-in-Yamuna.jpg" alt="Yamuna River" height="197cm">
+                    <h2 class="placeName">Yamuna River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>mid-September to mid-June</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutYamunaRiver.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------River Ganga----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/River-Ganga-Rishikesh.jpg" alt="River Ganga" height="197cm">
+                    <h2 class="placeName">River Ganga</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>late September to mid November</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutRiverGanga.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Tons River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Tons-River.jpg" alt="Tons River" height="218cm">
+                    <h2 class="placeName">Tons River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>NA</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutTonsRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Kameng River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Kameng-River.jpg" alt="Kameng River" height="218cm">
+                    <h2 class="placeName">Kameng River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>April to early June</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutKamengRiver.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Lohit River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-in-Lohit-river.jpg" alt="Lohit River" height="218cm">
+                    <h2 class="placeName">Lohit River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>September to June</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutLohitRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Spiti River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-in-Spiti-River.jpg" alt="Spiti River" height="218cm">
+                    <h2 class="placeName">Spiti River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>NA</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutSpitiRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Zanskar River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-in-Zanskar-River.jpg" alt="Zanskar River" height="218cm">
+                    <h2 class="placeName">Zanskar River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>May to October</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutZanskarRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Barapole----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Barapole-River-Coorg.jpg" alt="Barapole" height="218cm">
+                    <h2 class="placeName">Barapole</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>July to August</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutBarapole.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------River Bhagirathi----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-in-Bhagirathi.jpg" alt="River Bhagirathi" height="218cm">
+                    <h2 class="placeName">River Bhagirathi</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>April to June</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutRiverBhagirathi.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- --------------------- Alaknanda River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-in-Alaknanda.jpg" alt=" Alaknanda River" height="218cm">
+                    <h2 class="placeName"> Alaknanda River</h2>
+                    <p class="seasonToVisit"><b>Best time for rafting : </b>October to April</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutAlaknandaRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Kundalika River----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Rafting-in-Kundali-river.jpg" alt="Kundalika River" height="218cm">
+                    <h2 class="placeName">Kundalika River</h2>
+                    <p class="establishedDate"><b>Best time for rafting : </b>June to March</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutKundalikaRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- --------------------Teesta River------------------------ -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Teesta-River-Rafting.jpg" alt="Teesta River" height="218cm">
+                    <h2 class="placeName">Teesta River</h2>
+                    <p class="establishedDate"><b>Best time for rafting : </b>December to June</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutTeestaRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Brahmaputra River Rafting----------------------- -->
+                <div class="placesImages riverRaftingImages">
+                    <img src="River Rafting Images/Brahmaputra-River.jpg" alt="Brahmaputra River Rafting"
+                        height="218cm">
+                    <h2 class="placeName">Brahmaputra River Rafting</h2>
+                    <p class="establishedDate"><b>Best time for rafting : </b>September to June</p>
+                    <p class="moreInformation">
+                        <a href="River Rafting HTML/aboutBrahmaputraRiver.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="travelToIndia.html">Home</a>
+            <a href="historicalPlaces.html">Historical Places</a>
+            <a href="nationalParks.html">National Parks</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="about us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- ---------------------Image Slider Js----------------------- -->
+    <script src="imageSlider.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="darkAndLightMode.js"></script>
+
+    <!-- ---------------------Scroll Btn Js----------------------- -->
+    <script src="scrollToTop.js"></script>
+</body>
+
+</html>

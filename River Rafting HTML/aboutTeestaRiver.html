@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="../header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="../signInPage.css">
+
+    <!-- ---------------------Places Information File Css----------------------- -->
+    <link rel="stylesheet" href="../placesInfo.css">
+
+    <!-- ---------------------Print This Page Css----------------------- -->
+    <link rel="stylesheet" href="../printThisPage.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="../darkAndLightMode.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="../footer.css">
+
+    <title>Teesta River</title>
+
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="../about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="../signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <!-- ---------------------Main----------------------- -->
+    <main>
+        <span>
+            <p>
+                <a href="../travelToIndia.html">Home </a> &Gt; <a href="../riverRafting.html"> River Rafting </a> &Gt; Teesta River
+            </p>
+        </span>
+        <section id="printContentOnly">
+            <h2>Teesta River, Sikkim And Darjeeling</h2>
+            <hr>
+            <span>
+                <img src="../River Rafting Images/Teesta-River-Rafting.jpg" alt="Teesta River">
+                <p><b>Level of difficulty : </b>Challenging</p>
+                <p><b>Distance Covered : </b> 309 kms from the Himalaya joins</p>
+                <p><b>Best time for rafting : </b> December to June</p>
+            </span>
+            <p>
+                The point where Teesta meets with Rangit River forms a formidable place for rafting for veterans. Don’t
+                forget that outstanding beauty of the landscape further graces the rafting experience in Teesta River in
+                Sikkim.
+            </p>
+        </section>
+    </main>
+
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="../historicalPlaces.html">Historical Places</a>
+            <a href="../nationalParks.html">National Parks</a>
+            <a href="../riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="../about us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- -----------------------------Print This Page HTML---------------------- -->
+    <button onclick="printThisPage('printContentOnly')" class="printThisPage">Print this page</button>
+
+    <!-- ---------------------Print This Page Js----------------------- -->
+    <script src="../printThisPage.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="../darkAndLightMode.js"></script>
+
+</body>
+
+</html>

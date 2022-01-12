@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="../header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="../signInPage.css">
+
+    <!-- ---------------------Places Information File Css----------------------- -->
+    <link rel="stylesheet" href="../placesInfo.css">
+
+    <!-- ---------------------Print This Page Css----------------------- -->
+    <link rel="stylesheet" href="../printThisPage.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="../darkAndLightMode.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="../footer.css">
+
+    <title>India Gate</title>
+
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="../about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="../signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <main>
+        <span>
+            <p>
+                <a href="../travelToIndia.html">Home </a> &Gt; <a href="../historicalPlaces.html"> Historical Places In
+                    India </a> &Gt; India Gate
+            </p>
+        </span>
+        <section id="printContentOnly">
+            <h2>India Gate, Delhi</h2>
+            <hr>
+            <span>
+                <img src="../Historical Places Images/Gwalior-Fort.jpg" alt="India Gate">
+
+                <p><b> Address: </b>Rajpath, India Gate, New Delhi, Delhi 110001</p>
+
+                <p><b>Built In : </b> 1921</p>
+
+                <p><b>Built By:</b> Edwin Lutyens</p>
+
+
+            </span>
+            <p>This 42-meter monument is often compared with Arch de Triomphe in Paris and Arch of Constantine in Rome.
+                Located on the Rajpath, it was designed by Edwin Lutyens. Dedicated to the 82,000 soldiers of both
+                Indian and British descent who fought in World War One and 13,300 soldiers who were martyred in the 3rd
+                Anglo-Afghan War, it was built in 1931. Every year, the Republic Day Parade is held here. It is a famous
+                destination among both locals and tourists.<br><br>
+
+                <b>Interesting fact : </b> Dedicated to nearly 1 lakh soldiers who perished in two wars, namely WW I and
+                Third Anglo-Afghan War. It is the spot where Amar Jawan Jyoti – the eternal flame- continues to burn.
+            </p>
+        </section>
+    </main>
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="../historicalPlaces.html">Historical Places</a>
+            <a href="../nationalParks.html">National Parks</a>
+            <a href="../riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="../about us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- -----------------------------Print This Page HTML---------------------- -->
+    <button onclick="printThisPage('printContentOnly')" class="printThisPage">Print this page</button>
+
+    <!-- --------------------- Print This Page Js----------------------- -->
+    <script src="../printThisPage.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="../darkAndLightMode.js"></script>
+
+</body>
+
+</html>

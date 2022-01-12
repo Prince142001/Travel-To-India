@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="../header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="../signInPage.css">
+
+    <!-- ---------------------Places Information File Css----------------------- -->
+    <link rel="stylesheet" href="../placesInfo.css">
+
+    <!-- ---------------------Print This Page Css----------------------- -->
+    <link rel="stylesheet" href="../printThisPage.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="../darkAndLightMode.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="../footer.css">
+
+    <title>Qutub Minar</title>
+
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="../about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="../signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <main>
+        <span>
+            <p>
+                <a href="../travelToIndia.html">Home </a> &Gt; <a href="../historicalPlaces.html">Historical Places In India </a> &Gt; Qutub Minar
+            </p>
+        </span>
+        <section id="printContentOnly">
+            <h2>Qutub Minar, Delhi</h2>
+            <hr>
+            <span>
+                <img src="../Historical Places Images/Qutub-Minar-Delhi.jpg" alt="Qutub Minar">
+                <p><b>Address:</b>Aurobindo Marg, Mehrauli, New Delhi</p>
+                <p><b>Qutub Minar Height:</b> 72.5 meteres or 237.8 feet</p>
+                <p><b>Built By : </b> Qitub-ud-Din Aibak</p>
+                <p><b>Built In : </b> 1193</p>
+            </span>
+            <p>
+                Regarded as the site of the first Muslim kingdom in northern
+                India, the Qutub Minar is definitely one of the most historical
+                sites in India. It is one of the finest examples of Indo-Muslim
+                architecture with its intricate red sandstone storeys. These are
+                dotted with carvings and verses from the Quran and are mostly in Arabic
+                and Nagari. Qutub Minar is one of the famous historical places in India
+                and is said to have got its name from Qutb-ud-din Aibak who was the first
+                Muslim ruler of North India. The first mosque in India Quwwat-ul-Islam Masjid
+                is also located at the foot of the Qutub Minar.
+                <br><br>
+                It was hit by lightening couple of times and was damaged. The subsequent rulers
+                repaired it. Thus it is standing mightily as it was before till date.
+                <br><br>
+                Qutab Minar is a great masterpiece of Mughal architecture.
+                The base of the Qutub Minar measures 14.32 meters and the top of the
+                structure measures 2.75 meters. The bird eye's view of Delhi city from
+                the top is amazing. The base of first storey has alternate angular and
+                circular flutings, the second one is round. The third storey of the
+                Qutub Minar has angular flutings. The balconies projecting out heighten
+                the beauty of the Minar.
+                The tower is so high that around 379 steps are needed to be climbed to reach the top. Another taller
+                tower adjacent to Qutub Minar is named Alai Minar which is somewhat tilted in one direction.
+            </p>
+        </section>
+    </main>
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="../historicalPlaces.html">Historical Places</a>
+            <a href="../nationalParks.html">National Parks</a>
+            <a href="../riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="../about us.html">About Us</a>
+        </div>
+    </footer>
+    
+    <!-- -----------------------------Print This Page HTML---------------------- -->
+    <button onclick="printThisPage('printContentOnly')" class="printThisPage">Print this page</button>
+
+    <!-- ---------------------Print This page Js----------------------- -->
+    <script src="../printThisPage.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="../darkAndLightMode.js"></script>
+
+</body>
+
+</html>

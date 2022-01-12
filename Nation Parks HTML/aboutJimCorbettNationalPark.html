@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="../header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="../signInPage.css">
+
+    <!-- ---------------------Info File Css----------------------- -->
+    <link rel="stylesheet" href="../placesInfo.css">
+
+    <!-- ---------------------Print This Page Css----------------------- -->
+    <link rel="stylesheet" href="../printThisPage.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="../darkAndLightMode.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="../footer.css">
+
+    <title>Jim Corbett National Park</title>
+
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="../about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="../signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+    
+    <!-- ---------------------Main----------------------- -->
+    <main>
+        <span>
+            <p>
+                <a href="../travelToIndia.html">Home </a> &Gt;<a href="../nationalParks.html"> National Parks </a> &Gt;
+                 Jim Corbett National Park
+            </p>
+        </span>
+        <section id="printContentOnly">
+            <h2>Jim Corbett National Park, Uttarakhand</h2>
+            <hr>
+            <span>
+                <img src="../Nation Parks Images/jim-corbett-tiger-national-park.jpg" alt="Jim Corbett National Park">
+                <p><b>How to get there : </b>Well connected by road and rail to Delhi, Nainital, Moradabad and others.
+                </p>
+                <p><b>Famous For : </b>Red fox, black bear, jackal</p>
+                <p><b>Best time for visiting : </b>November to June</p>
+            </span>
+            <p>
+                Located close to Nainital, Jim Corbett National Park is a favorite destination for people looking to
+                spot tigers, making it one of the <b>important national parks in India.</b> Other animals to be spotted here
+                include several species of deer, leopards, jackals, red foxes, black bear, sloth bear, and monkeys.
+                Tourists can book jeep safaris for early mornings and afternoons. It is the <b>first national park in India</b>
+                in case you didn&apos;t know.
+                <br><br>
+                The park is divided into four separate zones, known as Durgadevi, Dhikala, Jhirna, and Bijrani, sprawled
+                across an area of 520 square kilometers. All four of these are ideal for spotting a tiger in its natural
+                habitat. There is also an option for trekking around the park, albeit in the company of a guide.
+            </p>
+        </section>
+    </main>
+
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="../historicalPlaces.html">Historical Places</a>
+            <a href="../nationalParks.html">National Parks</a>
+            <a href="../riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="../about us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- -----------------------------Print This Page HTML---------------------- -->
+    <button onclick="printThisPage('printContentOnly')" class="printThisPage">Print this page</button>
+
+    <!-- ---------------------Print This Page Js----------------------- -->
+    <script src="../printThisPage.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="../darkAndLightMode.js"></script>
+</body>
+
+</html>

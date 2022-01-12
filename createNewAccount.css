@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+.createNewAccount {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createNewAccount span{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 35%;
+}
+
+.createNewAccount img {
+    width: 13%;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.createNewAccount span p{
+    margin-top: 2.5%;
+    color: red;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 0.5rem;
+}
+
+.login {
+    margin: 1% 0;
+    padding: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px 4px darkcyan;
+}
+
+.login>form>input[type=text], .login>form>input[type=email], .login>form>input[type=password], .login>form>input[type=submit] {
+    margin-top: 5%;
+    padding: 8px 10px;
+    font-size: large;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    border-top: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid darkcyan;
+    transition: 0.3s linear;
+}
+
+.login>form>input[type=text]:hover, .login>form>input[type=email]:hover, .login>form>input[type=password]:hover {
+    border-top: 1px solid darkcyan;
+}
+
+.login>form>input[type=submit] {
+    margin: 5% 0;
+    border: 1px solid darkcyan;
+    cursor: pointer;
+}
+
+.login>form>input[type=submit]:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 4px 4px darkcyan;
+}
+
+
+/* -----------------------------Term and condition--------------------------------- */
+.login>p {
+    font-size: 15px;    
+    justify-content: justify;
+}
+
+.login>p>a{
+    color: darkcyan;
+    transition: 0.3s linear;
+}
+
+.login>p>a:hover{
+    text-decoration: none;
+}
+/* ------------------------------------Horizontal Line------------------------------------------------ */
+
+.login>hr{
+    border-top-color: darkcyan;
+    border-color: darkcyan;
+    margin: 2% 0;
+}
+
+/* ------------------------------------Responsive------------------------------------------------ */
+@media screen and (max-width: 480px){
+    .createNewAccount span{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0%;
+        margin-left: 3%;
+    }
+    
+    .createNewAccount img {
+        width: 18%;
+        object-fit:contain;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .createNewAccount span p{
+        margin-top: 4%;
+        color: red;
+        font-size: 30px;
+        padding-top: 0.5rem;
+    }
+
+    .createNewAccount>img{
+        margin: 3% 0;
+    }
+    
+    .login{
+        margin: 1% 0;
+        width: 95%;
+    }
+
+    .login>h2{
+        margin: 2% 0;
+    }
+
+    .login>p{
+        margin: 2% 0;
+    }
+
+    ::placeholder{
+        font-size: medium;
+    }
+}

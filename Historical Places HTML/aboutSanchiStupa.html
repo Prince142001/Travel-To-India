@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="../header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="../signInPage.css">
+
+    <!-- ---------------------Places Information File Css----------------------- -->
+    <link rel="stylesheet" href="../placesInfo.css">
+
+    <!-- ---------------------Print This Page Css----------------------- -->
+    <link rel="stylesheet" href="../printThisPage.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="../darkAndLightMode.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="../footer.css">
+    
+    <title>Sanchi Stupa</title>
+
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="../about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="../signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <!-- ---------------------Main----------------------- -->
+
+    <main>
+        <span>
+            <p>
+                <a href="../travelToIndia.html">Home </a> &Gt; <a href="../historicalPlaces.html">Historical Places In India </a> &Gt; Sanchi Stupa
+            </p>
+        </span>
+        <section id="printContentOnly">
+            <h2>Sanchi Stupa, Madhya Pradesh</h2>
+            <hr>
+            <span>
+                <img src="../Historical Places Images/Sanchi-Stupa-Madhya-Pradesh.jpg" alt="">
+
+                <p><b>Address:</b>MP SH 19, Sanchi, Madhya Pradesh 464661</p>
+                <p><b>Built By:</b>Emperor Ashoka</p>
+                <p><b>Built In:</b>3rd century BCE</p>
+
+            </span>
+            <br>
+            <p>Unearth one of the most religious centers of Buddhism at the Sanchi Stupa that houses relics of the
+                Buddha. This famous historical place in India was built by Lord Asoka in the 3rd century B.C for Emperor
+                Ashoka. The Dome of the Stupa signifies the wheel of law and this stupa is actually considered as a
+                symbol of Buddha&apos;s freedom the circle of life and death (Moksha). The four gateways of the Stupa have
+                various scenes from the Jataka tales and stories of Buddha&apos;s life.
+                <br><br>
+                <b>Interesting fact:</b> The relics of Buddha were painted with a Mauryan polish to make them glow like
+                glass.
+            </p>
+        </section>
+    </main>
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="../historicalPlaces.html">Historical Places</a>
+            <a href="../nationalParks.html">National Parks</a>
+            <a href="../riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="../about us.html">About Us</a>
+        </div>
+    </footer>
+   
+    <!-- -----------------------------Print This Page HTML---------------------- -->
+    <button onclick="printThisPage('printContentOnly')" class="printThisPage">Print this page</button>
+
+    <!-- ---------------------Print This page Js----------------------- -->
+    <script src="../printThisPage.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="../darkAndLightMode.js"></script>
+
+</body>
+
+</html>

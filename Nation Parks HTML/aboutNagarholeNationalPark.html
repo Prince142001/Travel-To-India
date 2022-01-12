@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="../header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="../signInPage.css">
+
+    <!-- ---------------------Info File Css----------------------- -->
+    <link rel="stylesheet" href="../placesInfo.css">
+
+    <!-- ---------------------Print This Page Css----------------------- -->
+    <link rel="stylesheet" href="../printThisPage.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="../darkAndLightMode.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="../footer.css">
+
+    <title> Nagarhole National Park, Karnataka </title>
+
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="../about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="../signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <!-- ---------------------Main----------------------- -->
+    <main>
+        <span>
+            <p>
+                <a href="../travelToIndia.html">Home </a> &Gt; <a href="../nationalParks.html"> National Parks </a> &Gt;
+                Nagarhole National
+                Park
+            </p>
+        </span>
+        <section id="printContentOnly">
+            <h2>Nagarhole National Park, Karnataka </h2>
+            <hr>
+            <span>
+                <img src="../Nation Parks Images/Nagarhole-National-Park.jpg" alt="Nagarhole National Park, Karnataka">
+                <p><b>How to get there : </b>Tourists can take a taxi from
+                    Mysore or buses which ply from Mysore till HD Kote
+                    which lies at a distance of about 30 km from the
+                    park.
+                </p>
+                <p><b>Famous For : </b>King Cobra, Krait, Indian rock python
+                </p>
+                <p><b>Best time for visiting : </b> April to May
+                </p>
+            </span>
+            <p>
+                Located near Bandipur National Park, this enchanting national
+                park in the Mysore district of Karnataka has rich wildlife
+                including both flora and fauna.
+                It is home to almost 250 varieties of birds as well as a variety
+                of animals such as Elephant, Tiger, Jackal, Gaur, Panther,
+                Sambar, Mongoose,
+                Spotted deer, Sloth Bear, Civet cat and Hyena. The place offers
+                lush green forests, shallow valleys and gentle slopes making it
+                truly a heaven
+                for all nature lovers and those seeking peace.
+                <br><br>
+                Apart from this, the park also has beautiful plantation and
+                vegetation along with tropical and deciduous forest land.
+                It is also home to a number of majestic reptiles such as vine
+                snake, Tortoise, King Cobra, Indian Rock Python, Krait, Russels
+                Viper and Monitor Lizard.
+            </p>
+        </section>
+    </main>
+
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="../historicalPlaces.html">Historical Places</a>
+            <a href="../nationalParks.html">National Parks</a>
+            <a href="../riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="../about us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- -----------------------------Print This Page HTML---------------------- -->
+    <button onclick="printThisPage('printContentOnly')" class="printThisPage">Print this page</button>
+
+    <!-- ---------------------Print This Page Js----------------------- -->
+    <script src="../printThisPage.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="../darkAndLightMode.js"></script>
+
+</body>
+
+</html>

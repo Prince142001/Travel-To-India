@@ -1,0 +1,36 @@
+#darkAndLightMode {
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 5px 8px 5px 20px;
+    bottom: 50px;
+    left: 0;
+    z-index: 99;
+    font-size: xx-large;
+    font-weight: 700;
+    border: 2px solid rgb(0, 123, 255);
+    border-left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#darkAndLightMode:hover {
+    box-shadow: 0 0 1px 2px rgb(0, 123, 255);
+}
+
+.dark-mode {
+    background-color: silver;
+    transition: 0.3s;
+}
+
+/* ---------------------------Responsive--------------------------------- */
+@media screen and (max-width: 360px){
+    #darkAndLightMode{
+        padding: 5px 8px 5px 15px;
+        font-size: large;
+        bottom: 30px;
+    }
+}

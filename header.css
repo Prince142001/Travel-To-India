@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 3.4rem;
+    background-color: white;
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 2px;
+    box-shadow: 0 0 2px 2px rgb(73, 72, 72);
+}
+
+header>span {
+    display: inline-flex;
+    position: absolute;
+    width: 30%;
+}
+
+header>span>img {
+    width: 19%;
+    padding: 2px;
+    margin-top: -9px;
+}
+
+header>span>p {
+    color: rgb(0, 123, 255);
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 0.5rem;
+}
+
+/* -------------------------------Search container---------------------------------- */
+header>.searchContainer {
+    margin-left: 35rem;
+    margin-top: 0.3%;
+}
+
+header>.searchContainer>input[type=search] {
+    width: 20rem;
+    margin-top: 1%;
+    border: none;
+    outline: 2px solid rgb(0, 123, 255);
+    padding: 5px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header>.searchContainer>button, #aboutUs, #navSignIn {
+    background-color: inherit;
+    color: rgb(0, 123, 255);
+    border: none;
+    padding: 3px;
+    font-size: xx-large;
+    cursor: pointer;
+    float: right;
+}
+
+header>.searchContainer>button {
+    background-color: black;
+    color: white;
+    width: 3.7rem;
+    float: right;
+    margin-top: 1%;
+    font-size: x-large;
+    outline: 2px solid rgb(0, 123, 255);
+}
+
+header>#aboutUs {
+    padding-top: 7px;
+    margin-left: 19%;
+    font-size: 2.1rem;
+    float: none;
+}
+
+header>#navSignIn {
+    padding-top: 7px;
+    padding-left: 18px;
+    font-size: 2.1rem;
+}
+
+/* ---------------------------------Responsive----------------------------------------- */
+@media screen and (max-width: 360px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        height: 2rem;
+        padding: 1px;
+    }
+
+    header>span>img {
+        width: 40%;
+        margin-top: -0.7%;
+    }
+
+    header>span>p {
+        display: none;
+    }
+
+    header>.searchContainer {
+        margin-left: 0.1rem;
+        margin-top: 0.3%;
+    }
+
+    header>.searchContainer>input[type=search] {
+        margin-left: 5rem;
+        padding: 5px;
+        width: 60%;
+        height: 1.5rem;
+    }
+
+    header>.searchContainer>input[type=search]::placeholder {
+        font-size: small;
+    }
+
+    header>.searchContainer>button, #aboutUs, #navSignIn {
+        font-size: large;
+    }
+
+    header>.searchContainer>button {
+        width: 1.5rem;
+        margin-top: 0.7%;
+        font-size: medium;
+        position: absolute;
+        float: left;
+        padding: 3px 0;
+    }
+
+    header>#aboutUs, header>#navSignIn {
+        padding-top: 0.1%;
+        padding-bottom: 0.1%;
+        margin-left: 8%;
+        font-size: 1.5rem;
+    }
+
+    header>#navSignIn {
+        padding-left: 18px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,157 @@
+footer {
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+}
+
+footer>.socialMediaLinks {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer>.quickLinks, .aboutUs {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+footer>span {
+    display: inline-flex;
+    margin-left: 10%;
+}
+
+footer>span>img {
+    width: 10%;
+}
+
+footer>span>p {
+    color: rgb(0, 123, 255);
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 1rem;
+}
+
+footer>.socialMediaLinks{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10% 8px;
+}
+
+footer>.socialMediaLinks>.fa {
+    font-size: x-large;
+    text-decoration: none;
+    margin: 0 8px;
+    color: white;
+}
+
+footer>.socialMediaLinks>.fa-youtube {
+    padding: 3px 8px;
+}
+
+footer>.socialMediaLinks>.fa-youtube:hover {
+    color: white;
+    background-color: red;
+}
+
+footer>.socialMediaLinks>.fa-linkedin {
+    padding: 3px 5px;
+}
+
+footer>.socialMediaLinks>.fa-linkedin:hover {
+    background-color: rgb(0, 123, 255);
+    color: white;
+}
+
+footer>.socialMediaLinks>.fa-twitter {
+    padding: 3px 5px;
+}
+
+footer>.socialMediaLinks>.fa-twitter:hover {
+    background-color: rgb(0, 123, 255);
+    color: white;
+}
+
+footer>.socialMediaLinks>.fa-instagram {
+    padding: 3px 5px;
+}
+
+footer>.socialMediaLinks>.fa-instagram:hover {
+    background-image: linear-gradient(to bottom right, blue, rgb(236, 109, 173), orange, red);
+    color: white;
+}
+
+footer>.socialMediaLinks>.fa-facebook {
+    padding: 3px 5px 3px 10px;
+}
+
+footer>.socialMediaLinks>.fa-facebook:hover {
+    background-color: rgb(0, 123, 255);
+    color: white;
+}
+
+footer>.quickLinks, .aboutUs {
+    font-size: large;
+    display: grid;
+}
+
+footer>.quickLinks>p {
+    font-size: x-large;
+    color: rgb(0, 123, 255);
+}
+
+footer>.quickLinks>a {
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    padding-left: 15px;
+    word-spacing: 5px;
+    letter-spacing: 1.5px;
+}
+
+footer>.quickLinks>a:hover {
+    text-decoration: underline;
+    transition: 0.5s linear;
+}
+
+footer>.aboutUs>a{
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    padding-left: 15px;
+    word-spacing: 5px;
+    letter-spacing: 1.5px;
+    transition: 0.2s linear;
+}
+footer>.aboutUs>a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------Responsive--------------------------------- */
+@media screen and (max-width: 360px){
+    footer {
+        background-color: black;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: 8px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    footer>.socialMediaLinks{
+        display: flex;
+        flex-direction: column;
+        margin-left: 13%;
+    }
+
+    footer>span>img {
+        width: 70%;
+    }
+
+    footer>span>p {
+        display: none;
+    }
+}

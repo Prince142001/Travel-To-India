@@ -1,0 +1,170 @@
+main {
+    margin-top: 3.5rem;
+    position: static;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main>section {
+    float: left;
+    margin: 1% 1% 0%;
+}
+
+body {
+    background-color: white;
+}
+
+/* --------------------------Section  one---------------------------- */
+main>section>span {
+    display: flex;
+    flex-direction: row;
+}
+
+main>section>span>a {
+    position: absolute;
+    margin-top: 0.4%;
+    float: right;
+    right: 1%;
+    color: rgb(0, 123, 255);
+    font-size: large;
+    font-weight: bold;
+}
+
+main>section>span>a:hover {
+    text-decoration: none;
+}
+
+main>section>hr {
+    border-top: 2px solid black;
+}
+
+
+/* --------------------------Historical places---------------------------- */
+main>section>.historicalPlaces {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+    margin: 15px 0px;
+    height: 100%;
+} 
+
+main>section>.historicalPlaces>.placesImages {
+    float: none;
+    transition: 0.3s linear;
+}
+
+.historicalPlaces>.placesImages:hover {
+    box-shadow: 0 0 4px 4px rgb(95, 92, 92);
+    position: static;
+}
+
+.placesImages {
+    max-width: 24.5%;
+}
+
+.placesImages>img {
+    max-width: 100%;
+    padding: 2px;
+    object-fit: cover;
+    border-bottom: 1px solid black;
+}
+
+.placesImages>.placeName, .establishedDate, .seasonToVisit, .moreInformation, .seasonToVisit {
+    padding: 3px;
+}
+
+.placesImages>.moreInformation {
+    background-color: black;
+}
+
+.placesImages>.moreInformation>.moreInfo {
+    color: white;
+    text-decoration: underline;
+    padding: 3px 6px;
+}
+
+.placesImages>.moreInformation>.moreInfo:hover {
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+}
+
+
+/* ---------------------------Responsive--------------------------------- */
+@media screen and (max-width: 360px) {
+    main {
+        margin-top: 3rem;
+    }
+
+    main section h2 {
+        font-size: large;
+    }
+
+    main>section>span>a {
+        font-size: 12px;
+        margin-top: 1.3%;
+    }
+
+    main>section>hr {
+        width: 100%;
+        border-top: 2px solid black;
+    }
+
+    /* --------------------------Historical places---------------------------- */
+    main>section>.historicalPlaces {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 5px;
+        margin: 15px 0px;
+    }
+
+    .placesImages {
+        max-width: 49.1%;
+    }
+
+    .placesImages>img {
+        max-width: 100%;
+        height: 58%;
+    }
+
+    .historicalPlacesImages {
+        width: 100%;
+        height: 38%;
+    }
+
+    /* --------------------------National Parks---------------------------- */
+
+    .nationalParksImages>img {
+        width: 100%;
+        height: 40%;
+    }
+
+    /* --------------------------River rafting---------------------------- */
+
+    .riverRaftingImages>img {
+        width: 100%;
+        height: 45%;
+    }
+
+    /* --------------------------Taj Mahal----------------------------- */
+    .historicalPlaces>.tajMahalImage {
+        height: 13.2rem;
+    }
+
+    /* ------------------------Humayns Tomb------------------------- */
+    .historicalPlaces>.humayunsTombImage {
+        height: 11rem;
+    }
+
+    /* -------------------------Qutub Minar------------------------ */
+    .historicalPlaces>.qutubMinarImage {
+        height: 13.3rem;
+    }
+
+    /* -------------------------Lakshmi Vilas Palace------------------------- */
+    .historicalPlaces>.lakshmiVilasPalaceImage {
+        height: 13.3rem;
+    }
+
+    .historicalPlaces>.kazirangaNationalParKImage{
+        height: 15rem;
+    }
+}

@@ -1,0 +1,47 @@
+section article {
+    position: relative;
+}
+
+section article img {
+    width: 100%;
+    margin: 2% 0 -1%;
+    padding: 0;
+}
+
+section p {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    top: 14%;
+    bottom: 40%;
+    background-color: rgb(65, 63, 63, 0.5);
+    color: white;
+    font-size: 22px;
+    padding: 8%;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+/* ---------------------------Responsive--------------------------------- */
+@media screen and (max-width: 360px) {
+    section article img {
+        width: 100%;
+        height: 400px;
+        margin: 2% 0 -2%;
+    }
+
+    section p {
+        position: absolute;
+        bottom: 5%;
+        right: 3%;
+        top: 7%;
+        bottom: 4%;
+        background-color: rgb(65, 63, 63, 0.5);
+        color: white;
+        font-size: 18px;
+        padding: 8%;
+        word-spacing: 4px;
+        letter-spacing: 2px;
+        overflow: scroll;
+    }
+}

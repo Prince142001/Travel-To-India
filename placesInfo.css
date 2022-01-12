@@ -1,0 +1,81 @@
+main {
+    padding: 1rem 0;
+    position: static;
+}
+
+main>span>p {
+    margin: 5rem 10rem 0;
+    font-weight: bold;
+}
+
+body{
+    background-color: white;
+}
+
+main>span>p>a {
+    color: rgb(0, 123, 255);
+    font-size: large;
+    text-decoration: none;
+}
+
+main>span>p>a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 1.5rem 10rem;
+}
+
+section>hr {
+    border-top: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+section>span>img {
+    width: 60%;
+    box-shadow: 0 0 5px 4px rgb(95, 92, 92);
+}
+
+section>span>p {
+    padding-top: 5px;
+    font-size: large;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+section>span>.placesAddress{
+    padding-top: 13px;
+}
+
+section>p {
+    padding-top: 13px;
+    font-size: large;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------Responsive--------------------------------- */
+@media screen and (max-width: 360px) {
+    main {
+        padding: 3% 0;
+        position: static;
+    }
+
+    main>span>p {
+        margin: 2rem 1rem 0;
+        font-weight: bold;
+    }
+
+    section {
+        margin: 0.5rem 1rem;
+    }
+    
+    section>span>img {
+        width: 100%;
+        box-shadow: 0 0 5px 4px rgb(95, 92, 92);
+    }
+
+    main>span>p>a,main>span>p {
+        font-size: small;
+    }
+}

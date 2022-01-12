@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.signIn {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+/* ----------------------------Company Logo-------------------------- */
+.signIn span{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+.signIn img {
+    width: 12%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn span p{
+    margin-top: 2%;
+    color: red;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 0.5rem;
+}
+/* ---------------------------------Sign-In Container------------------------------- */
+.signIn_container {
+    margin: 0 0 1%;
+    padding: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px 1px rgb(0, 123, 255);
+}
+
+.signIn_container>form>input[type=text] {
+    margin-top: 8%;
+    padding: 8px 10px;
+    font-size: large;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    border-top: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid rgb(0, 123, 255);
+    transition: 0.3s linear;
+}
+
+.signIn_container>form>input[type=text]:hover, .Signin_container>form>input[type=text]:focus {
+    border-top: 1px solid rgb(0, 123, 255);
+}
+
+/* -----------------------------------Sign-In Submit Button and New user's----------------------------------------- */
+.signIn_container>form>input[type=submit], .signIn>button {
+    margin-top: 8%;
+    padding: 6px 10px;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(0, 123, 255);
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    transition: 0.2s linear;
+}
+
+.signIn_container>form>input[type=submit]:hover, .signIn>button:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 2px 1px rgb(0, 123, 255);
+}
+
+/* -----------------------------Term and condition--------------------------------- */
+.signIn_container>p {
+    margin-top: 8%;
+    font-size: 14px;
+    justify-content: justify;
+}
+
+.signIn_container>p>a {
+    color: rgb(0, 123, 255);
+}
+
+/* ---------------------------Forget Password---------------------------------- */
+.signIn_container>a {
+    width: fit-content;
+    margin-top: 3%;
+    font-size: medium;
+    color: rgb(0, 123, 255);
+    transition: 0.2s linear;
+}
+
+.signIn_container a:hover {
+    text-decoration: none;
+}
+
+.signIn>p {
+    margin-top: 2.5%;
+}
+
+.signIn>button {
+    margin: 0 auto 0.5%;
+    width: 30%;
+}
+
+/* -----------------------------Responsive---------------------------------- */
+@media screen and (max-width: 480px) {
+
+    /* ----------------------------Company Logo-------------------------- */
+    .signIn span {
+        display: flex;
+        flex-direction: row;
+        /* margin-top: 0%; */
+        margin-left: 10%;
+    }
+
+    .signIn span img {
+        margin: 3% 0;
+        width: 18%;
+        object-fit:contain;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .signIn_container, .signIn>button {
+        width: 95%;
+    }
+
+    ::placeholder {
+        font-size: medium;
+    }
+
+    .signIn span p {
+        margin-top: 4%;
+        color: red;
+        font-size: 30px;
+        padding-top: 0.5rem;
+    }
+
+    .signIn>button {
+        margin: 1% auto 1%;
+        width: 90%;
+    }
+}

@@ -1,0 +1,31 @@
+.printThisPage {
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 5px 8px 5px 5px;
+    bottom: 30%;
+    right: 10px;
+    z-index: 99;
+    width: 10%;
+    font-size: x-large;
+    font-weight: 700;
+    border: 2px solid rgb(0, 123, 255);
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.printThisPage:hover {
+    border: 2px solid transparent;
+    box-shadow: 0 0 4px 4px rgb(38, 127, 221);
+}
+
+/* ---------------------------Responsive--------------------------------- */
+@media screen and (max-width: 360px) {
+    .printThisPage{
+        width: 20%;
+        font-size: small;
+        padding: 3px 5px 3px 3px;
+        bottom: 5%;
+    }
+}

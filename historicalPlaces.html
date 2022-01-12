@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="signInPage.css">
+
+    <!-- ---------------------Image Slider Css----------------------- -->
+    <link rel="stylesheet" href="imageSlider.css">
+
+    <!-- ---------------------Section File Css----------------------- -->
+    <link rel="stylesheet" href="sectionPage.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="darkAndLightMode.css">
+
+    <!-- ---------------------Scroll Btn Css----------------------- -->
+    <link rel="stylesheet" href="scrollToTop.css">
+
+    <style>
+        main>section>span>p {
+            margin: 0 0 0.9rem;
+            font-weight: bold;
+        }
+
+        main>section>span>p>a {
+            color: blue;
+            width: fit-content;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        main>section>span>p>a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <title>Famous Historical Places In India</title>
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="main page images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <!-- ---------------------Scroll back to top----------------------- -->
+    <button onclick="scrollToTop()" id="backToTopBtn">&mapstoup;</button>
+
+    <!-- ---------------------Main----------------------- -->
+    <main>
+
+        <!-- ------------------------------Section One-------------------------------------- -->
+        <section>
+            <!-- ---------------------------------Image Slider or Slideshow HTML----------------------------------------------------------- -->
+            <div class="slideShowContainer">
+                <img src="Main Page Images/image1.jpg" class="imageSlides fadeSlides" alt="slide image 1">
+                <img src="Main Page Images/image2.jpg" class="imageSlides fadeSlides" alt="slide image 2">
+                <img src="Main Page Images/image3.jpg" class="imageSlides fadeSlides" alt="slide image 3">
+            </div>
+
+            <div style="text-align:center">
+                <span class="slideShowDot"></span>
+                <span class="slideShowDot"></span>
+                <span class="slideShowDot"></span>
+            </div>
+        </section>
+
+        <!-- ---------------------Section Two----------------------- -->
+        <section>
+            <span>
+                <p>
+                    <a href="travelToIndia.html">Home </a> &Gt; Historical Places In India
+                </p>
+            </span>
+            <span>
+                <h2>Historical Places In India</h2>
+            </span>
+            <hr>
+            <div class="historicalPlaces">
+                <!-- ---------------------Sanchi Stupa----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Sanchi-Stupa-Madhya-Pradesh.jpg" alt="Sanchi Stupa"
+                        height="218cm">
+                    <h2 class="placeName">Sanchi Stupa</h2>
+                    <p class="establishedDate"><b>Built In : </b>3rd century BCE</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutSanchiStupa.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Taj Mahal----------------------- -->
+                <div class="placesImages historicalPlacesImages tajMahalImage">
+                    <img src="Historical Places Images//Taj Mahal.jpg" alt="Taj Mahal">
+                    <h2 class="placeName">Taj Mahal</h2>
+                    <p class="establishedDate"><b>Built In : </b>1648 AD</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutTajMahal.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Fatehpuri Sikri----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Fatehpuri-Sikri-Uttar-Pradesh1.jpg" alt="Fatehpuri Sikri"
+                        height="218cm">
+                    <h2 class="placeName">Fatehpuri Sikri</h2>
+                    <p class="establishedDate"><b>Built In : </b>1569</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutFatehpuriSikri.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Red Fort----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Red-Fort-Delhi.jpg" alt="Red Fort" height="218cm">
+                    <h2 class="placeName">Red Fort</h2>
+                    <p class="establishedDate"><b>Built In : </b>1639</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutRedFort.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Charminar----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Charminar-Hyderabad.jpg" alt="Charminar" height="218cm">
+                    <h2 class="placeName">Charminar</h2>
+                    <p class="establishedDate"><b>Built In : </b>1591</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutCharminar.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Humayun’s Tomb----------------------- -->
+                <div class="placesImages historicalPlacesImages humayunsTombImage">
+                    <img src="Historical Places Images/Humayuns-Tomb-Delhi.jpg" alt="Humayuns Tomb" height="218cm">
+                    <h2 class="placeName">Humayun&apos;s Tomb</h2>
+                    <p class="establishedDate"><b>Built In : </b>1572</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutHumayunTomb.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Agra Fort----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Agra-Fort-Uttar-Pradesh.jpg" alt="Agra Fort" height="218cm">
+                    <h2 class="placeName">Agra Fort</h2>
+                    <p class="establishedDate"><b>Built In : </b>1573</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutAgraFort.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Hawa Mahal----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Hawa-Mahal-Jaipur.jpg" alt="Hawa Mahal" height="218cm">
+                    <h2 class="placeName">Hawa Mahal</h2>
+                    <p class="establishedDate"><b>Built In : </b>1799</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutHawaMahal.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Khajuraho Temples----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Khajuraho-Temples-Madhya-Pradesh.jpg" alt="Khajuraho Temples"
+                        height="218cm">
+                    <h2 class="placeName">Khajuraho Temples</h2>
+                    <p class="establishedDate"><b>Built In : </b>Between 950 AD and 1050 AD</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutKhajurahoTemples.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Konark Temple----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Konark-Temple-Odisha.jpg" alt="Konark Temple" height="218cm">
+                    <h2 class="placeName">Konark Temple</h2>
+                    <p class="establishedDate"><b>Built In : </b>13th century BCE</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutKonarkTemple.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Rani ki Vav----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Rani-ki-Vav-Gujarat.jpg" alt="Rani ki Vav" height="218cm">
+                    <h2 class="placeName">Rani ki Vav</h2>
+                    <p class="establishedDate"><b>Built In : </b>11th century AD</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutRanikiVav.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Mahabodhi Temple----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Mahabodhi-Temple-Bodh-Gaya.jpg" alt="Mahabodhi Temple"
+                        height="218cm">
+                    <h2 class="placeName">Mahabodhi Temple</h2>
+                    <p class="establishedDate"><b>Built In : </b>3rd century BCE</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutMahabodhiTemple.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Victoria Memorial----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Victoria-Memorial.jpg" alt="Victoria Memorial" height="218cm">
+                    <h2 class="placeName">Victoria Memorial</h2>
+                    <p class="establishedDate"><b>Built In : </b>1921</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutVictoriaMemorial.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- --------------------Jallianwala Bagh------------------------ -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Jallianwala-Bagh.jpg" alt="Jallianwala Bagh" height="218cm">
+                    <h2 class="placeName">Jallianwala Bagh</h2>
+                    <p class="establishedDate"><b>Built In : </b>1961</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutJallianwalaBagh.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Gateway of India----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Gateway-of-India-Mumbai3.jpg" alt="Gateway of India"
+                        height="218cm">
+                    <h2 class="placeName">Gateway of India</h2>
+                    <p class="establishedDate"><b>Built In : </b>1913</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutGatewayofIndia.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Golden Temple----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images/Golden-Temple.jpg" alt="Golden Temple" height="218cm">
+                    <h2 class="placeName">Golden Temple</h2>
+                    <p class="establishedDate"><b>Built In : </b>1599</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutGoldenTemple.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+                <!-- ---------------------India Gate----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images/India-Gate.jpeg" alt="India Gate" height="218cm">
+                    <h2 class="placeName">India Gate</h2>
+                    <p class="establishedDate"><b>Built In : </b>1921</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutIndiaGate.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+                <!-- ---------------------Chola Temples----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images/chola-temples_23rd-oct.jpg" alt="Chola Temples" height="218cm">
+                    <h2 class="placeName">Chola Temples</h2>
+                    <p class="establishedDate"><b>Built In : </b>1010</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutCholaTemples.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+                <!-- ---------------------Amer Fort----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images/Amer-Fort.jpg" alt="Amer Fort" height="218cm">
+                    <h2 class="placeName">Amer Fort</h2>
+                    <p class="establishedDate"><b>Built In : </b>1592</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutAmerFort.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+                <!-- ---------------------Kumbhalgarh Fort----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Kumbhalgarh-Fort.jpg" alt="Kumbhalgarh Fort" height="218cm">
+                    <h2 class="placeName">Kumbhalgarh Fort</h2>
+                    <p class="establishedDate"><b>Built In : </b>1458</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutKumbhalgarhFort.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Gwalior Fort----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Gwalior-Fort.jpg" alt="Gwalior Fort" height="218cm">
+                    <h2 class="placeName">Gwalior Fort</h2>
+                    <p class="establishedDate"><b>Built In : </b>3rd century BCE</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutGwaliorFort.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Qutub Minar----------------------- -->
+                <div class="placesImages historicalPlacesImages qutubMinarImage">
+                    <img src="Historical Places Images//Qutub-Minar-Delhi.jpg" alt="Qutub Minar" height="218cm">
+                    <h2 class="placeName">Qutub Minar</h2>
+                    <p class="establishedDate"><b>Built In : </b>1193</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutQutubMinar.html" class="moreInfo">More Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Lakshmi Vilas Palace----------------------- -->
+                <div class="placesImages historicalPlacesImages lakshmiVilasPalaceImage">
+                    <img src="Historical Places Images/Lakshmi-Vilas-Palace.jpg" alt="Lakshmi Vilas Palace"
+                        height="218cm">
+                    <h2 class="placeName">Lakshmi Vilas Palace</h2>
+                    <p class="establishedDate"><b>Built In : </b>1890</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutLakshmiVilasPalace.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+
+                <!-- ---------------------Ajanta & Ellora Caves----------------------- -->
+                <div class="placesImages historicalPlacesImages">
+                    <img src="Historical Places Images//Cave_26_Ajanta.jpg" alt="Ajanta & Ellora Caves" height="218cm">
+                    <h2 class="placeName">Ajanta & Ellora Caves</h2>
+                    <p class="establishedDate"><b>Built In : </b>200 BC to 100 AD, 5th century AD</p>
+                    <p class="moreInformation">
+                        <a href="Historical Places HTML/aboutAjanta&ElloraCaves.html" class="moreInfo">More
+                            Information</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="travelToIndia.html">Home</a>
+            <a href="nationalParks.html">National Parks</a>
+            <a href="riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="about us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- ---------------------Image Slider Js----------------------- -->
+    <script src="imageSlider.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="darkAndLightMode.js"></script>
+
+    <!-- ---------------------Scroll Btn Js----------------------- -->
+    <script src="scrollToTop.js"></script>
+</body>
+
+</html>

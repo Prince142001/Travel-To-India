@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------------------Font-Awesome Link----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ---------------------Header File Css----------------------- -->
+    <link rel="stylesheet" href="../header.css">
+
+    <!-- ---------------------Sign In Page File Css----------------------- -->
+    <link rel="stylesheet" href="../signInPage.css">
+
+    <!-- ---------------------Info File Css----------------------- -->
+    <link rel="stylesheet" href="../placesInfo.css">
+
+    <!-- ---------------------Print This Page Css----------------------- -->
+    <link rel="stylesheet" href="../printThisPage.css">
+
+    <!-- ---------------------Dark and Light Mode Btn Css----------------------- -->
+    <link rel="stylesheet" href="../darkAndLightMode.css">
+
+    <!-- ---------------------Footer File Css----------------------- -->
+    <link rel="stylesheet" href="../footer.css">
+
+    <title> Periyar National Park, Kerala </title>
+
+</head>
+
+<body>
+    <!-- ---------------------Header----------------------- -->
+    <header>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+        <div class="searchContainer">
+            <input type="search" name="Search Box" placeholder="Search for places......">
+            <button id="searchBtn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <a href="../about us.html" id="aboutUs">
+            <i class="fa fa-info-circle"></i>
+        </a>
+        <a href="../signInPage.html" id="navSignIn">
+            <i class="fa fa-user"></i>
+        </a>
+    </header>
+
+    <!-- --------------------Dark and Light Mode------------------------ -->
+    <button id="darkAndLightMode" onclick="darkAndLightModeFun()"><i class="fa fa-adjust"></i></button>
+
+    <!-- ---------------------Main----------------------- -->
+    <main>
+        <span>
+            <p>
+                <a href="../travelToIndia.html">Home </a> &Gt; <a href="../nationalParks.html"> National Parks </a> &Gt;
+                Periyar National Park
+            </p>
+        </span>
+        <section id="printContentOnly">
+            <h2> Periyar National Park, Kerala</h2>
+            <hr>
+            <span>
+                <img src="../Nation Parks Images/Periyar-National-Park-Kerala.jpg" alt="Periyar National Park, Kerala">
+                <p><b>How to get there : </b>The nearest railhead is in Kottayam, 114 kms away while the nearest
+                    airports to the park is Madurai which is at a distance of 136 kms. You can take a cab from both
+                    these places.
+                </p>
+                <p><b>Famous For : </b>Adventurous activties like bamboo rafting, safari, tiger trail
+                </p>
+                <p><b>Best time for visiting : </b>November to February
+                </p>
+            </span>
+            <p>
+                Spread over 257 square miles, the Periyar National Park in Thekkady, Kerala is the best-protected
+                reserve area in India. You can find various species in the gorgeous park including the majestic
+                elephants and royal tigers, apart from other fishes, reptiles and birds. The park is well-known for its
+                stillness and greenery and is an amazing blend of adventure with beauty. It is probably the <b>biggest
+                    national park in India </b>
+                <br><br>
+                You can enjoy the boat cruises, jungle safaris, eco-tourism activities including options like Bamboo
+                Rafting, Jungle Patrol, Bamboo Grove, Periyar Tiger Trail, Jungle camp, Border hiking, Jungle Inn and
+                Bullock Cart discoveries. The wide range of activities attracts thousands of tourists every year.
+
+            </p>
+        </section>
+    </main>
+
+    <!-- ---------------------Footer----------------------- -->
+    <footer>
+        <span>
+            <img src="../Main Page Images/logo image.png" alt="Company logo">
+            <p>Travel to India</p>
+        </span>
+
+        <div class="socialMediaLinks">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+
+        <div class="quickLinks">
+            <p>Quick Links</p>
+            <a href="../historicalPlaces.html">Historical Places</a>
+            <a href="../nationalParks.html">National Parks</a>
+            <a href="../riverRafting.html">River Rafting</a>
+        </div>
+
+        <div class="aboutUs">
+            <a href="../about us.html">About Us</a>
+        </div>
+    </footer>
+
+    <!-- -----------------------------Print This Page HTML---------------------- -->
+    <button onclick="printThisPage('printContentOnly')" class="printThisPage">Print this page</button>
+
+    <!-- ---------------------Print This Page Js----------------------- -->
+    <script src="../printThisPage.js"></script>
+
+    <!-- ---------------------Dark and Light Mode Btn Js----------------------- -->
+    <script src="../darkAndLightMode.js"></script>
+    
+</body>
+
+</html>
